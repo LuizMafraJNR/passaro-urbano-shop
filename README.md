@@ -6,22 +6,47 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
+# Build
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+# Como foi criado
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+ng new peixe-urbano -p peixe-urbano --skip-tests=true
+```
 
-## Running end-to-end tests
+# Instalando bootstrap, jquery e tether
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+--save é utilizado para incluir no nosso projeto.
 
-## Further help
+## Bootstrap
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+npm install bootstrap@4.0.0 --save
+```
+
+## Jquery
+
+```
+npm install jquery --save
+```
+
+## Tether
+
+Tether facilita o posicionamento de objetos com posiçoes absolutas.
+
+```
+npm install tether --save
+```
+
+Em seguida tem que adicionar tudo no angular.json
+
+CSS
+
+"/node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+SCRIPT
+
+"/node_modules/jquery/dist/jquery.min.js",
+              "/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "/node_modules/tether/dist/js/thether.min.js"
